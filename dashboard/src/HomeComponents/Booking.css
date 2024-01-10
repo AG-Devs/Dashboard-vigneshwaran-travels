@@ -1,0 +1,29 @@
+.booking{
+    position: fixed;
+    left: 1%;
+    top: 22%;
+    height: 80vh;
+    width: 215vh;
+    box-shadow: 0rem 0rem 0.2rem black;
+    overflow: scroll;
+}
+.bookingDisplay{
+    margin: 2%;
+    border-bottom: 1px solid gray;
+}
+.bookingDisplay>h3{
+    font-size: 150%;
+    color: skyblue;
+}
+.bookingDisplay>p{
+    margin-left:2%
+}
+
+@media screen and (max-device-width:700px) {
+    .booking{
+        position: fixed;
+        left: 2%;
+        height: 76vh;
+        width: 45.5vh;
+    }
+}

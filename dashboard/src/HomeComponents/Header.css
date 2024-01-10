@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    gap: 5%;
+}
+.header>img{
+    height : 13%;
+    width:13%;
+    margin: 0%;
+    animation-name: logo;
+    animation-iteration-count: 2;
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+}
+@keyframes logo{
+    0%{
+      transform: rotateY(180deg);
+    }
+  }
+.header>h1{
+    position: fixed;
+    left: 12%;
+    top: 2%;
+    color: skyblue;
+    font-size: 220%;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+@media screen and (max-device-width:700px) {
+    
+    .header>img{
+        height : 20%;
+        width:40%;
+        margin: 0%;
+        position: fixed;
+        left: -8%;
+        top: -4%;
+        animation-name: logo;
+        animation-iteration-count: 2;
+        animation-delay: 0.2s;
+        animation-duration: 0.5s;
+    }
+    .header>h1{
+        width: 50%;
+        position: fixed;
+        left: 25%;
+        top: 0%;
+        color: skyblue;
+        font-size: 170%;
+        text-align: center;
+        text-shadow: 0.1rem 0.1rem 0.1rem black;
+    }
+}
