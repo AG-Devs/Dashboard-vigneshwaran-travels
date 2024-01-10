@@ -7,7 +7,7 @@ const Feedback = () => {
     const [usersFeedback,setusersFeedback] = useState([])
 
     useEffect(()=>{
-        axios.get('http://localhost:3003/users/feedbacks')
+        axios.get('https://dashboard-vigneshwaran-travels.onrender.com/users/feedbacks')
         .then(res =>{
             console.log('done')
             setusersFeedback(res.data)

@@ -7,7 +7,7 @@ const Booking = () => {
     const [usersBooking,setusersBooking] = useState([])
 
     useEffect(()=>{
-        axios.get('http://localhost:3003/customer/booking')
+        axios.get('https://dashboard-vigneshwaran-travels.onrender.com/customer/booking')
         .then(res =>{
             console.log('done')
             setusersBooking(res.data)
